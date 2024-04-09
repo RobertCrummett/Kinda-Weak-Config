@@ -16,9 +16,13 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
       -- Langauge servers
       local lspconfig = require("lspconfig")
-      lspconfig.lua_ls.setup({})
+      lspconfig.lua_ls.setup({
+        capabilities = capabilities,
+      })
 
       -- Global mappings.
       vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float)
