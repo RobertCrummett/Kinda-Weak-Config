@@ -3,13 +3,17 @@ return {
 	"CRAG666/code_runner.nvim",
 	config = function()
 		require("code_runner").setup({
+      project_path = vim.fn.expand "~/.config/nvim/project_manager.json",
+      before_run_filetype = function()
+        vim.api.nvim_command("w")
+      end,
 			filetype = {
-        python = "python3",
-        latex = "latexmk -pdflatex=lualatex -pdf",
-        lua = "lua",
-				},
-			},
-		})
+          python = "python3",
+          tex = "latexmk -pdflatex=lualatex -pdf",
+          lua = "lua",
+          r = "Rscript",
+			  },
+			})
 
     -- Remaps
     vim.keymap.set('n', '<leader>r', ':RunCode<CR>', { noremap = true, silent = false })

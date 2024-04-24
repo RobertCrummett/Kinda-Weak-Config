@@ -1,1 +1,22 @@
-{}
+{
+  "~/Desktop/StylishPresentation": {
+    "name": "CGEM LaTeX Presentation",
+    "description": "LuaLaTeX presentation template for CGEM activities",
+    "command": "latexmk -pdflatex=lualatex -pdf presentation-template.tex"
+  },
+  "~/Desktop/IV": {
+    "name": "Inverse theory homework",
+    "description": "Not the most entertaining homework assignment of all time",
+    "command": "cd build && make && ./inversion_homework"
+  },
+  "~/Desktop/DS3P": {
+    "name": "Data structures homework",
+    "description": "Assignment regarding tries",
+    "command": "cd build && make && ./run-main && ./run-tests"
+  },
+  "~/Documents/RosenbrockMakeSmall": {
+    "name": "Minimize the Rosenbrock function",
+    "description": "Non linear inversion attempt",
+    "command": "cd build && make && ./run-minimization"
+  }
+}
