@@ -1,2 +1,2 @@
-function latex_word_counter(file)
-end
+-- Turn on spell checking
+vim.opt.spell = true
