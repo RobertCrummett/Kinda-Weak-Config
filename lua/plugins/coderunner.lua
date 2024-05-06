@@ -8,7 +8,7 @@ return {
         vim.api.nvim_command("w")
       end,
 			filetype = {
-          python = "python3",
+          python = "python3 -u",
           tex = "latexmk -pdflatex=lualatex -pdf",
           lua = "lua",
           r = "Rscript",
