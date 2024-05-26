@@ -4,14 +4,19 @@
     "description": "LuaLaTeX presentation template for CGEM activities",
     "command": "latexmk -pdflatex=lualatex -pdf -f presentation-template.tex"
   },
-  "~/Desktop/Final_Inversion_V2": {
-    "name": "Inverse theory final, Version 2",
-    "description": "This may turn out to be a failure",
-    "command": "cd build && make && ./run-final"
+  "~/Desktop/fft_attemp": {
+    "name": "FFTW Example",
+    "description": "Computing FFT with FFTW3",
+    "command": "cd build && make && ./MyExe"
   },
-  "~/Documents/RosenbrockMakeSmall": {
-    "name": "Minimize the Rosenbrock function",
-    "description": "Non linear inversion attempt",
-    "command": "cd build && make && ./run-minimization"
+  "~/Desktop/serial_prog": {
+    "name": "Monte Carlo integration",
+    "description": "Run a serial Monte Carlo Integration",
+    "command": "cd build && cmake --build . && ctest"
+  },
+  "~/Desktop/openmp_prog": {
+    "name": "Open MP practice",
+    "description": "Run an Open MP Program",
+    "command": "cd build && cmake --build . && ./run 0 1 2 3 1 5 8 2 3 1"
   }
 }

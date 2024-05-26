@@ -2,9 +2,9 @@ local set = vim.opt
 
 -- Some tab settings
 set.expandtab = true
-set.tabstop = 2
-set.softtabstop = 2
-set.shiftwidth = 2
+set.tabstop = 8
+set.softtabstop = 8
+set.shiftwidth = 8
 
 -- Line wapping
 vim.wo.wrap = false

@@ -45,3 +45,7 @@ BLAS
 Nocedal
 Rosenbrock
 Capriotti
+EWMA
+ARIMA
+Fortran
+attractors
