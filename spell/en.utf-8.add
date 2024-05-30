@@ -49,3 +49,7 @@ EWMA
 ARIMA
 Fortran
 attractors
+setprecision
+cout
+endl
+lua

@@ -6,7 +6,7 @@ set.tabstop = 8
 set.softtabstop = 8
 set.shiftwidth = 8
 
--- Line wapping
+-- Line warping
 vim.wo.wrap = false
 
 -- Leader
@@ -23,3 +23,7 @@ set.cursorline = true
 -- Spelling
 set.spelllang = "en_us"
 set.spell = true
+
+-- Colors
+set.termguicolors = true
+vim.cmd [[colorscheme quiet]]
