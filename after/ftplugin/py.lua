@@ -1,5 +1,7 @@
 local set = vim.opt
 
+set.spell = false
+
 -- Tab settings
 set.expandtab = true
 set.tabstop = 4

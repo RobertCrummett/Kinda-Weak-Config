@@ -1,8 +1,8 @@
 local set = vim.opt
 
 -- Spelling
-set.spelllang = "en_us"
 set.spell = true
+set.spelllang = "en_us"
 
 -- Some tab settings
 set.expandtab = true

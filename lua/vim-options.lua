@@ -20,6 +20,9 @@ set.signcolumn = "number"
 -- Cursor line
 set.cursorline = true
 
+-- Spelling off by default
+set.spell = false
+
 -- Colors
 set.termguicolors = true
 vim.cmd [[colorscheme murphy]]
