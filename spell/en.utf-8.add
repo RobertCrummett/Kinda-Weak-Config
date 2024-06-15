@@ -53,3 +53,7 @@ setprecision
 cout
 endl
 lua
+istream
+radians
+PETSc
+Arial

@@ -20,10 +20,6 @@ set.signcolumn = "number"
 -- Cursor line
 set.cursorline = true
 
--- Spelling
-set.spelllang = "en_us"
-set.spell = true
-
 -- Colors
 set.termguicolors = true
-vim.cmd [[colorscheme quiet]]
+vim.cmd [[colorscheme murphy]]
