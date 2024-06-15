@@ -22,7 +22,11 @@ set.cursorline = true
 
 -- Spelling off by default
 set.spell = false
+set.spelllang = "en_us"
 
 -- Colors
 set.termguicolors = true
 vim.cmd [[colorscheme murphy]]
+
+-- Automatically change the current working directory
+set.autochdir = true

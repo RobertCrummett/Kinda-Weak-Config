@@ -1,3 +1,4 @@
+print("Opening *.lua file")
 local set = vim.opt
 
 -- Turn spelling off here

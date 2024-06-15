@@ -1,3 +1,4 @@
+print("Opening *.py file")
 local set = vim.opt
 
 set.spell = false
