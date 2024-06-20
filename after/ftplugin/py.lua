@@ -1,10 +1,5 @@
-print("Opening *.py file")
-local set = vim.opt
-
-set.spell = false
+vim.o.spell = false
 
 -- Tab settings
-set.expandtab = true
-set.tabstop = 4
-set.softtabstop = 4
-set.shiftwidth = 4
+vim.o.expandtab = false
+vim.g.python_recommended_style = true

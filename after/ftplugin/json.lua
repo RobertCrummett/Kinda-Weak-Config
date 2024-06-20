@@ -1,4 +1,3 @@
-print("Opening *.json file")
 local set = vim.opt
 
 set.spell = false

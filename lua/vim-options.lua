@@ -31,3 +31,4 @@ vim.o.autochdir = true
 
 -- Turn off matching parenthesis
 vim.g.loaded_matchparen = false
+

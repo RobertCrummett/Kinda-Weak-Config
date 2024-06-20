@@ -12,9 +12,7 @@ end
 set.spell = false
 
 if is_filetype("tex") then
-        print("Opened *.tex file")
-        
-        -- Spelling
+        -- Spelling on for tex files
         set.spell = true
 end
 
