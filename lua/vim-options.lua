@@ -13,9 +13,9 @@ vim.wo.wrap = false
 vim.g.mapleader = " "
 
 -- Numbers
-set.number = true
-set.relativenumber = true
-set.signcolumn = "number"
+-- set.number = true
+-- set.relativenumber = true
+-- set.signcolumn = "number"
 
 -- Cursor line
 set.cursorline = true
@@ -26,7 +26,10 @@ set.spelllang = "en_us"
 
 -- Colors
 set.termguicolors = true
-vim.cmd [[colorscheme murphy]]
+vim.cmd [[colorscheme zellner]]
 
 -- Automatically change the current working directory
 set.autochdir = true
+
+-- Turn off matching parenthesis
+vim.g.loaded_matchparen = false
