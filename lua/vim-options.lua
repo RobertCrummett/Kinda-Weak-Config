@@ -27,7 +27,7 @@ vim.o.termguicolors = true
 vim.cmd [[colorscheme zellner]]
 
 -- Automatically change the current working directory
-vim.g.autochdir = true
+vim.cmd [[set autochdir]]
 
 -- Turn off matching parenthesis
 vim.g.loaded_matchparen = false
