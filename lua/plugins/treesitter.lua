@@ -8,7 +8,7 @@ return {
           ensure_installed = {"c", "cpp", "python", "lua", "vim",
                                 "vimdoc", "query", "elixir", "heex", 
                                 "javascript", "html", "latex", "json",
-                                "matlab", "r"},
+                                "matlab", "r", "fortran"},
           sync_install = false,
           highlight = { enable = true },
           indent = { enable = true },  
