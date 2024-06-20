@@ -1,10 +1,8 @@
-local set = vim.opt
-
 -- Some tab settings
-set.expandtab = true
-set.tabstop = 8
-set.softtabstop = 8
-set.shiftwidth = 8
+vim.o.expandtab = true
+vim.o.tabstop = 8
+vim.o.softtabstop = 8
+vim.o.shiftwidth = 8
 
 -- Line warping
 vim.wo.wrap = false
@@ -13,23 +11,23 @@ vim.wo.wrap = false
 vim.g.mapleader = " "
 
 -- Numbers
--- set.number = true
--- set.relativenumber = true
--- set.signcolumn = "number"
+-- vim.o.number = true
+-- vim.o.relativenumber = true
+-- vim.o.signcolumn = "number"
 
 -- Cursor line
-set.cursorline = true
+vim.o.cursorline = true
 
 -- Spelling off by default
-set.spell = false
-set.spelllang = "en_us"
+vim.o.spell = false
+vim.o.spelllang = "en_us"
 
 -- Colors
-set.termguicolors = true
+vim.o.termguicolors = true
 vim.cmd [[colorscheme zellner]]
 
 -- Automatically change the current working directory
-set.autochdir = true
+vim.o.autochdir = true
 
 -- Turn off matching parenthesis
 vim.g.loaded_matchparen = false
