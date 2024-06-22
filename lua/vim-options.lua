@@ -16,7 +16,7 @@ vim.g.mapleader = " "
 -- vim.o.signcolumn = "number"
 
 -- Cursor line
-vim.o.cursorline = true
+-- vim.o.cursorline = true
 
 -- Spelling off by default
 vim.o.spell = false
