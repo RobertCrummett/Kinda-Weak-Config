@@ -46,10 +46,12 @@ vim.g.netrw_list_hide = vim.fn["netrw_gitignore#Hide"]() .. [[,.git/]] -- hide m
 set.path:append("**")  -- recursive search when `find`ing
 set.wildmenu = true    -- enhanced command line completion
 
-set.wildignore:append("*.o")
-set.wildignore:append("*.pyc")
-set.wildignore:append("**/__pycache__/**")
-set.wildignore:append("**/venv/**")
-set.wildignore:append("**/node_modules/**")
-set.wildignore:append("**/.git/**")
+set.wildignore:append {
+    "*.o",
+    "*.pyc",
+    "**/__pycache__/**",
+    "**/venv/**",
+    "**/node_modules/**",
+    "**/.git/**",
+}
 
