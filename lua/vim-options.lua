@@ -24,7 +24,7 @@ vim.g.spelllang = "en_us"
 
 -- Colors
 vim.g.termguicolors = true
-vim.cmd [[colorscheme zellner]] -- default flash bang
+vim.cmd [[colorscheme zellner]] -- default flash bang 
 vim.o.background = "light"
 
 -- Automatically change the current working directory
