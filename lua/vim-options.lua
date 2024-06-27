@@ -23,9 +23,9 @@ vim.g.spell = false
 vim.g.spelllang = "en_us"
 
 -- Colors
+default_colorscheme = "meta5" -- set in `./plugins/awesome-vim-colorschemes.lua`
 vim.g.termguicolors = true
-vim.cmd [[colorscheme zellner]] -- default flash bang 
-vim.o.background = "light"
+vim.g.background = "dark"
 
 -- Automatically change the current working directory
 -- Sometimes useful, other times annoying and better off just use Netrw correctly
@@ -39,3 +39,14 @@ vim.g.netrw_banner = false          -- remove banner
 vim.g.netrw_liststyle = 3           -- tree viewer as default
 vim.g.netrw_sizestyle = 'h'         -- human readable sizes, not bytes
 vim.g.netrw_list_hide = vim.fn['netrw_gitignore#Hide']() .. [[,.git/]] -- hide my git stuff
+
+-- Fuzzy finding enhancements with `find` command
+vim.cmd [[set path+=**]] -- paths searched when `find` command issued
+vim.cmd [[set wildmenu]] -- enhanced command line completion
+
+vim.cmd [[set wildignore+=comma,separated,list,of,file,patterns]]
+vim.cmd [[set wildignore+=**/.git/**]]         -- prevent searching in git
+vim.cmd [[set wildignore+=**/node_modules/**]] -- prevent searching in nodemodules
+vim.cmd [[set wildignore+=**/venv/**]]         -- prevent searching in venv
+vim.cmd [[set wildignore+=**/__pycache__/**]]  -- prevent searching in pycache
+vim.cmd [[set wildignore+=*.o]]                -- prevent searching for obj files
