@@ -25,12 +25,16 @@ set.spell = false
 set.spelllang = "en_us"
 
 -- Colors
-default_colorscheme = "meta5" -- set in `./plugins/awesome-vim-colorschemes.lua`
+default_colorscheme = "mountaineer"
 set.termguicolors = true
-set.background = "dark"
+-- set.background = "dark"
+
+-- Transparent background
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- Automatically change the current working directory
--- Sometimes useful, other times annoying and better off just use Netrw correctly
+-- Sometimes useful, other times annoying 
 set.autochdir = false
 
 -- Turn off matching parenthesis -- this just annoys me
@@ -40,7 +44,9 @@ vim.g.loaded_matchparen = false
 vim.g.netrw_banner = false          -- remove banner
 vim.g.netrw_liststyle = 3           -- tree viewer as default
 vim.g.netrw_sizestyle = "h"         -- human readable sizes, not byte
-vim.g.netrw_list_hide = vim.fn["netrw_gitignore#Hide"]() .. [[,.git/]] -- hide my git stuff
+vim.g.netrw_list_hide = 
+    vim.fn["netrw_gitignore#Hide"]() .. 
+    [[,.git/]]                      -- hide my git stuff
 
 -- Fuzzy finding enhancements with `find` command
 set.path:append("**")  -- recursive search when `find`ing
