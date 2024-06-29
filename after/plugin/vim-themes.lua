@@ -4,4 +4,4 @@ function set_colorscheme(colorscheme)
     vim.cmd.colorscheme(colorscheme)
 end
 
-set_default_colorscheme()
+set_colorscheme()
