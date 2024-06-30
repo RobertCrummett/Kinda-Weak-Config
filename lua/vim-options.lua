@@ -10,11 +10,11 @@ set.shiftwidth = 4
 vim.wo.wrap = false
 
 -- Leader
--- vim.g.mapleader = " "
+vim.g.mapleader = " "
 
--- Line Numbers, not really all that useful for me
-set.number = false
-set.relativenumber = false
+-- Line Numbers
+set.number = true
+set.relativenumber = true
 set.signcolumn = "number"
 
 -- Cursor line
@@ -24,10 +24,17 @@ set.cursorline = false
 set.spell = false
 set.spelllang = "en_us"
 
+vim.keymap.set("n", "<Leader>sp", function()
+    set.spell = not set.spell:get() 
+end)
+
+-- No auto comment blocks
+set.formatoptions:remove {"c", "r", "o"}
+
 -- Colors
-default_colorscheme = "mountaineer"
+default_colorscheme = "rose-pine"
 set.termguicolors = true
--- set.background = "dark"
+set.background = "dark"
 
 -- Transparent background
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
