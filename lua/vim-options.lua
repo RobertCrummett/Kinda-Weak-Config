@@ -24,6 +24,7 @@ set.cursorline = false
 set.spell = false
 set.spelllang = "en_us"
 
+-- Short cut to turn spelling on & off
 vim.keymap.set("n", "<Leader>sp", function()
     set.spell = not set.spell:get() 
 end)
@@ -35,6 +36,9 @@ set.formatoptions:remove {"c", "r", "o"}
 default_colorscheme = "rose-pine"
 set.termguicolors = true
 set.background = "dark"
+
+-- Shorthand for setting colorscheme
+vim.keymap.set("n", "<Leader>cs", ":colorscheme ")
 
 -- Transparent background
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
